@@ -1,37 +1,147 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/m4z3n/m4z3n.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<style type="text/css">
+	@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-### Markdown
+html, body{
+  height: 100%;
+  font-weight: 800;
+  overflow: scroll;
+  overflow-x: hidden;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 
-```markdown
-Syntax highlighted code block
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 
-# Header 1
-## Header 2
-### Header 3
+body{
+  background: #030321;
+  font-family: Arial;
+}
 
-- Bulleted
-- List
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
 
-1. Numbered
-2. List
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
 
-**Bold** and _Italic_ and `Code` text
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
 
-[Link](url) and ![Image](src)
-```
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
 
-### Jekyll Themes
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/m4z3n/m4z3n.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
 
-### Support or Contact
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -9999;
+  transform: translateX(-50%) translateY(-50%);
+  background: #030321;
+}
+
+main {
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+.content {
+  width: 100%;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+nav > * {
+  color: #fff;
+  text-decoration;
+  padding: 1em 2em;
+  margin-right: 1em;
+  border: 0 dashed #fff;
+  transition: border .5s;
+  text-decoration: none;
+}
+nav > *:hover {
+  border-bottom: .5em solid #8c7ae6;
+}
+
+
+</style>
+
+<main>
+  <nav>
+    <a href="https://soundcloud.com/msirp999"><img src="https://a-v2.sndcdn.com/assets/images/sc-icons/favicon-2cadd14b.ico"></a>
+    <a href="https://www.instagram.com/msirprism/"><img src="https://www.instagram.com/static/images/ico/favicon.ico/dfa85bb1fd63.ico"></a>
+    <a href="https://twitter.com/killmsirp"><img src="https://abs.twimg.com/favicons/favicon.ico"></a>
+  </nav>
+</main>
+
+<svg viewBox="0 0 960 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">MsirprisM</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+
+
+
+<video autoplay loop>
+  <source src="http://s4.converto.io/download-file/oyLS11gfbFZ2bhhdGxxzJY4jdm6LQFzP/file.mp4">
+  	<script>
+        var video = document.currentScript.parentElement;
+        video.volume = 0.333;
+    </script>
+</video>
+
